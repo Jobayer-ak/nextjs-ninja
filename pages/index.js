@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar/>
+    <div className={styles.title}>
       <h1>Homepage</h1>
-      <p>
+      <p className={styles.text}>
         lorem ipsumVoluptate commodo occaecat occaecat officia dolor magna. Quis
         sint ipsum minim minim nisi. Elit quis mollit officia nostrud qui
         consequat. Aliquip mollit exercitation sit deserunt velit minim id culpa
@@ -18,13 +18,9 @@ export default function Home() {
         reprehenderit deserunt excepteur sit quis incididunt proident commodo
         enim laboris. Lorem Lorem velit excepteur adipisicing.
       </p>
-      <p>
-        lorem ipsumAdipisicing in cupidatat qui consectetur mollit commodo
-        reprehenderit esse ut eu. Amet est pariatur culpa nulla irure Lorem quis
-        amet aliquip sint laboris. Nulla excepteur velit minim nulla occaecat ad
-        tempor ex aliquip quis aliquip cupidatat aliquip amet.
-      </p>
-      <Footer/>
+      <Link href="/ninjas/test">
+        <a className={styles.btn}>See Ninja Listing</a>
+      </Link>
     </div>
-  )
+  );
 }
