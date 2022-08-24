@@ -23,7 +23,7 @@ export default function Home() {
         reprehenderit deserunt excepteur sit quis incididunt proident commodo
         enim laboris. Lorem Lorem velit excepteur adipisicing.
       </p>
-      <Link href="/ninjas/test">
+      <Link href="/ninjas">
         <a className={styles.btn}>See Ninja Listing</a>
       </Link>
     </div>
