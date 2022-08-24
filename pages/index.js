@@ -7,6 +7,11 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>Ninja List | Home</title>
+      <meta name="keywords" content="ninjas"/>
+    </Head>
     <div className={styles.title}>
       <h1>Homepage</h1>
       <p className={styles.text}>
@@ -22,5 +27,6 @@ export default function Home() {
         <a className={styles.btn}>See Ninja Listing</a>
       </Link>
     </div>
+    </>
   );
 }
