@@ -12,7 +12,7 @@ const NotFound = () => {
   }, [router]);
 
   return (
-    <div className="not-found">
+    <div>
       <h1>Ooooops.....</h1>
       <h2>That page cannot be found.</h2>
       <p>
